@@ -24,17 +24,28 @@ body {
     color: white;
     text-align: center;
 }
-#Container {
-    border-radius: 10rem;
-    width: 48rem;
-    height: 100%;
+
+#Container { 
     margin-top: 5rem;
-    background-color: white;
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff; 
+    display: flex;    
+    flex-direction: initial;
+    width: 80%;
+
     
     
 }
-section h2 {
+
+.Cajacuadrado .CajaTriangulo .CajaCirculo {
+    width: 270px;
+    height: 325px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+section h3 {
     border-radius: 10%;
     width: 90%;
     background: #33A;
@@ -54,4 +65,39 @@ img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+}
+.cta {
+    display: flex;
+    align-items: center;
+    color: black;
+    background: none;
+    border: none;
+    padding: 12px 18px;
+    position: relative;
+ z-index: 2;
+}
+.cta::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(calc(100% + 4px));
+    width: 45px;
+    height: 45px;
+    background: rgb(117, 51, 170);
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0,0,.5,2), width .25s cubic-bezier (0,0,.5,2);
+    z-index: -1;
+    
+}
+.cta:hover::before {
+    width: 100%;
+    transform: translateY(-50%) translateX(-18px);
+    transition: transform .25s cubic-bezier(0,0,.5,2), width .25s .25s cubic-bezier(0,0,.5,2);
+}
+.cta i {
+    margin-left: 5px;
+    transition: transform .25s .4s cubic-bezier(0,0,.5,2);
+}
+.cta:hover i {
+transform: translateX(3px);
 }
