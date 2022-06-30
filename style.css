@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62.5%;
+  
+    
+}
+#cajita{
+    
+    background: rgb(117, 51, 170);
+    box-shadow: 0px 2px 30px 8px #333;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em; 
+}
+body {
+    background: #1e1f24;
+    color: white;
+    text-align: center;
+}
+#Container {
+    border-radius: 10rem;
+    width: 48rem;
+    height: 100%;
+    margin-top: 5rem;
+    background-color: white;
+    display: inline-block;
+    
+    
+}
+section h2 {
+    border-radius: 10%;
+    width: 90%;
+    background: #33A;
+    box-shadow: 0px 2px 20px 8px #333;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 0.5em;
+}
+section label{
+    color: black;
+}
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
