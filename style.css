@@ -33,35 +33,84 @@ body {
     display: flex;    
     flex-direction: initial;
     width: 80%;
-
-    
+    height: 450px;
+    border-radius: 10px;
+    justify-content: center;
+   
     
 }
 
-.Cajacuadrado .CajaTriangulo .CajaCirculo {
+#Cajacuadrado  {
+    border: 6px double #000;
     width: 270px;
-    height: 325px;
-    padding: 20px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    
+    
+}
+#CajaTriangulo
+{   border: 6px double #000;
+    margin-top: 10px;
+    width: 270px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    
+} 
+#CajaCirculo{ 
+     border: 6px double #000; 
+     margin-top: 10px;
+    width: 270px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
     justify-content: center;
     
 }
+#Cajacuadrado img {
+    margin-top: 10px;
+    width: 8rem;
+    height:8rem;
+}
+#CajaTriangulo img {
+    margin-top: 10px;
+    width: 7rem;
+    height:8rem;
+}
+#CajaCirculo img {
+    margin-top: 10px;
+    width: 8rem;
+    height:8rem;
+}
+
 section h3 {
-    border-radius: 10%;
-    width: 90%;
+    border-radius: 20%;
+    width:100%;
     background: #33A;
     box-shadow: 0px 2px 20px 8px #333;
     color: white;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 section label{
     color: black;
 }
-img {
+
+#cajita img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
