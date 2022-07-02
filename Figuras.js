@@ -93,7 +93,7 @@ const calcularPerimetroTriangulo = () => {
 
 const calcularAreaTriangulo = () => {
     const altura = Number(document.getElementById("InputTrianguloaltura").value);
-          base   = Number(document.getElementById("InputTriangulobase").value);   
+          base   = Number(document.getElementById("InputTriangulobase1").value);   
           Area   = areaTriangulo (base,altura);
         alert(Area);
   }
