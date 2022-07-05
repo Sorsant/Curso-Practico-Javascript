@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Porcentajes y Descuentos | Curso Práctico De Javascripts de Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+        <p>Este es el Segundo taller del Curso Práctrico De Javascripts en Platzi</p>
+    </header>
+    <section> 
+        
+        <h2>Calcula el precio a pagar de tus productos con Descuentos</h2>
+        <form><div id="caja1">
+            <label  for="inputPrice">Escribe el precio de tu producto</label>
+            <input id="inputPrice" type="number" placeholder="Escribe el Precio"> <br>
+
+            <label for="inputDiscount">Escribe el porcentaje de descuento</label>
+            <input id="inputDiscount" type="number" placeholder="Escribe el Descuento"><br>
+
+            <button type="button" onclick="resultadoDeDescuentoDelPrecio()"> Calcula el precio con descuento</button>
+            <p id="ResultP"></p>
+        </div>
+
+<!--         ---------------------------------------------------- -->
+    <div id="caja2">
+        <label  for="inputPrice1">Escribe el precio de tu producto</label>
+            <input id="inputPrice1" type="number" placeholder="Escribe el Precio"> <br>
+
+            <label for="inputDiscoun2">Elige el porcentaje de descuento</label>
+           
+                <select name="Porcentajes" id="inputDiscoun2">
+
+                     <option value="5" >5%</option>
+                     <option value="10">10%</option>
+                     <option value="15">15%</option>
+                     <option value="20">20%</option>
+                     <option value="25">25%</option>
+                     <option value="30">30%</option>
+                     <option value="35">35%</option>
+                     <option value="40">40%</option>
+                     <option value="45">45%</option>
+                     <option value="50">50%</option>
+
+                </select><br>
+                
+                   <button type="button" onclick="resultadoDeDescuentoDelPrecio1()"> Calcula el precio con descuento</button>
+                   <p id="ResultP1"></p><br>
+    </div>
+
+<!-- --------------------------------------------------------- -->
+
+<div id="caja3">
+            <!-- <output id="rangevalue">50</output> -->
+            <input type="text" class="container--input3 input-text" id="originalPrice" oninput="pantalla.value= descuentoP()" placeholder="Escribe el precio">
+            
+            <input type="range" min="0" max="100" value="0" name="" id="" oninput="rangeDiscount.value=value, pantalla.value= descuentoP()">
+            <input type="text" name="" id="rangeDiscount" class="container--input2 input-text" value="0" disabled>
+            <span class="percentSymbol">%</span>
+             <br>
+            <input type="text" name="" id="pantalla" class="container--input1 input-text" disabled placeholder="Precio final">
+       </div>
+</form>
+    </section>
+</body>
+<script src="./descuentos.js"></script>
+</html>
+
+
+
