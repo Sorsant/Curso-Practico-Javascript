@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Media Cuadratica</title>
+    </head>
+<body>
+    <h1>Media Cuadratica</h1>
+    <p>La media cuadrática resulta especialmente útil cuando la variable estadística toma valores positivos y negativos, ya que al hacer el cuadrado de cada dato todos los valores se convierten en positivo. Por lo tanto, la media cuadrática se utiliza para analizar aquellas variables en las que el signo no es importante, sino su valor absoluto.</p>
+    
+    <p>function mediaCuadratica(lista){
+        const cuadrada = lista.map(function(x) {
+            return Math.pow(x,2);
+         });    
+         const reducer = (accumulator, curr) =>  accumulator + curr;
+        const suma= cuadrada.reduce(reducer);    
+        const raiz = Math.sqrt(suma/cuadrada.length);    
+        return raiz;
+    }
+    </p>
+    
+</body>
+<script src="./index.js"></script>
+</html>
