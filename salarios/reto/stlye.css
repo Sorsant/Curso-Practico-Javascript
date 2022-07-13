@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+html {
+    font-size:  62.5%;
+    background: #f2f2f2;
+}
+body {
+  width: 100%;
+  height: 100vh;
+ 
+  display:grid;
+  place-items:center;
+  background: #753BBD;
+
+}
+#caja1 {
+    border-radius: 10px;
+    width: 30rem;
+    height: auto;
+    background-color: white;
+    margin-bottom: 5rem;
+}
+#caja {
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-bottom: 5rem;
+}
+#Container{
+    border-radius: 10px;
+  align-items: center;
+    width: 50rem;
+    height: auto;
+    background-color: rgb(71, 5, 118);
+    margin: 0.5rem;
+}
+#Contenido{
+    border-radius: 10px;
+    padding: auto;
+    display: flexbox;
+    width: 44rem;
+    height: auto;
+    background-color: white;
+    margin: 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+}
+h1{ 
+    padding-top: 5%;
+    margin: 1rem;
+    height: auto;
+}
+h3{
+    margin: 1rem;
+}
+p{
+    margin: 1rem 
+}
+button{
+    margin-top: 10px;
+   margin-left: 30%;
+   margin-bottom: 5px;
+}
+label{font-size: 1.3rem;
+    margin-top: 10px;
+   margin-left: 30%;
+  
+}
+input{
+    margin-left: 30%;
+}
+select{
+    margin-left: 30%;
+}

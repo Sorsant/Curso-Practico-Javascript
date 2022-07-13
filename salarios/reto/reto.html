@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stlye.css">
+    <title>Capacidad de Ahorro || Capacidad de Endeudamiento</title>
+</head>
+<body>
+    <section class="Container"> 
+        <form>
+        <div id="caja">
+            
+            <h1>Capacidad De Ahorro</h1><br>
+            <label  for="inputPrice">Monto Estipulado a Ahorro</label><br>
+            <input id="inputPrice" type="number" placeholder="Ahorro Total"> <br>
+            <label  for="inputPrice1">Cantidad de Años </label><br>
+            <input id="inputPrice1" type="number" placeholder="(0/5 años)"> <br>
+            <label for="inputDiscoun2">Elige El Metodo de Pago</label>  <br>         
+                <select name="Metodo de Pago Mensual" id="inputDiscoun2">
+                    <option value="12" >Mensual</option>
+                     <option value="24" >Quicenal</option>
+                     </select><br>
+                
+                   <button type="button" onclick="cuantoAhorrarCortoPlazo()">Ejecutar</button>
+                   <p id="ResultP1"></p><br>
+        </div>
+     
+         <div id="caja1">
+            <h1>Capacidad de Endeudamiento o Margen libre de Gastos</h1><br>
+        <label  for="inputPrice3">Escribe el Monto de Tu Ingreso</label><br>
+        <input id="inputPrice3" type="number" placeholder="Tu Ingreso"> <br>
+
+        <label for="inputDiscount">Escribe el Monto de Gastos</label><br>
+        <input id="inputDiscount" type="number" placeholder="Gastos"><br>
+
+        <button type="button" onclick="capacidadDeEndeudamiento()"> Ejecutar</button>
+        <p id="ResultP"></p>
+        </div>
+        </form>
+    </section>
+    <div id="Container">
+        <div id="Contenido"><h3>La Capacidad De Ahorro</h3><br>
+         <p>
+            La capacidad de ahorro es la posibilidad que tienen las personas de separar un porcentaje de sus ingresos y reservarlo para su uso en el futuro; siempre y cuando hacerlo no signifique desmejorar la calidad de vida o vivir “con las justas”.<br>
+
+            La capacidad de ahorro solo existe si los egresos familiares son inferiores a los ingresos. Es decir, si mensualmente gastas menos de lo que ganas. Esto te dará la certeza que estás en posibilidad de comenzar a ahorrar. 
+        </p>
+        </div><br>
+
+        <div id="Contenido"><h3>La Capacidad De Endeudamiento</h3><br>
+        <p>
+            Es la cantidad de deuda máxima que se puede asumir sin afectar la salud financiera de una persona o empresa.<br> 
+
+            Según los expertos es recomendable que el porcentaje de la capacidad de endeudamiento sea máximo del 40% de los ingresos, después de esto es peligroso para tu economía.<br>
+            
+            Con lo anterior podemos deducir que puedes endeudarte hasta en un 40% de tus ingresos y el porcentaje restante, es decir el 60%, utilizarlo para cumplir con las obligaciones básicas como vivienda, alimentación, salud, ahorro etc, esto te permitirá suplir estas necesidades sin mayor preocupación.  
+        </p></div>
+    </div>
+
+    <script src="./reto.js"></script>
+</body>
+</html>
